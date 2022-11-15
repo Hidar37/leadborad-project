@@ -1,3 +1,81 @@
-body {
-  background-color: bisque;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+  margin: 2rem 1rem 3rem;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* recent-scores-wrapper Section */
+.recent-scores-wrapper {
+  margin-left: 4rem;
+}
+
+.recent-score-box {
+  margin-bottom: 2rem;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-score-box h3 {
+  font-size: 2rem;
+}
+
+.recent-score-box button {
+  width: 100px;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: 2px solid black;
+}
+
+/* Leadboard Table section */
+.scores-table .nav {
+  list-style-type: none;
+  border: 2px solid black;
+  padding-left: 0.5rem;
+}
+
+.scores-table .nav :nth-child(even) {
+  background-color: #dcdcdc;
+}
+
+.nav li.nav-item {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Add New Player with Score Section */
+.add-your-score-wrapper h3 {
+  font-size: 2rem;
+}
+
+.add-your-score-wrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-your-score-wrapper form input[type="text"],
+.add-your-score-wrapper form input[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  cursor: pointer;
 }
