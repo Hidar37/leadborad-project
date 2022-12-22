@@ -6,7 +6,7 @@ export default class API {
   }
 
   // eslint-disable-next-line class-methods-use-this
-  async addScores(playerName, playerSocre) {
+  addScores = async (playerName, playerSocre) => {
     const response = await fetch(
       `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/`,
       {
@@ -22,14 +22,19 @@ export default class API {
     );
     const responseJson = await response.json();
     return responseJson;
-  }
+  };
 
   // eslint-disable-next-line class-methods-use-this
-  async getScores() {
+  getScores = async () => {
     const response = await fetch(
       'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/k1XrGGwLaFG2Z0M5dLBC/scores/',
     );
     const jsonRes = await response.json();
     return jsonRes;
-  }
+  };
+
+  // Empty Input
+  resetForm = (formAddress) => {
+    formAddress.reset();
+  };
 }

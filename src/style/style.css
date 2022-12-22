@@ -72,10 +72,19 @@ main {
 }
 
 .add-your-score-wrapper form input[type="text"],
+.add-your-score-wrapper form input[type="number"],
 .add-your-score-wrapper form input[type="submit"] {
   margin-top: 1rem;
   padding: 0.6rem;
   font-size: 1.2rem;
   border: 2px solid black;
   cursor: pointer;
+}
+
+/* Success/Falier Message */
+#show-message {
+  display: none;
+  font-size: 1.1rem;
+  color: #198754;
+  text-decoration: underline;
 }
