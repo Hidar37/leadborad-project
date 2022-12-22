@@ -48,6 +48,8 @@ main {
   list-style-type: none;
   border: 2px solid black;
   padding-left: 0.5rem;
+  max-height: 350px;
+  overflow-y: auto;
 }
 
 .scores-table .nav :nth-child(even) {

@@ -6,6 +6,19 @@ const playerName = document.getElementById('name');
 const playerScore = document.getElementById('score');
 const playerInfoWrapper = document.getElementById('add-player-info');
 
+// Show all Players info on page load
+window.addEventListener('load', () => {
+  api.getScores().then((getScoresResponse) => {
+    getScoresResponse.result.forEach((element) => {
+      // Creating li for each player
+      const liElement = document.createElement('li');
+      liElement.setAttribute('class', 'nav-item');
+      liElement.textContent = `${element.user}: ${element.score}`;
+      playerInfoWrapper.appendChild(liElement);
+    });
+  });
+});
+
 // Add New player and thier scores
 document
   .getElementById('form-add-player-score')
