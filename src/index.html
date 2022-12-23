@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haider Webpack</title>
-</head>
-<body>
-  <header>
-    <h1>
-      Leaderboard
-    </h1>
-  </header>
-  <!-- Main container -->
-  <main>
-    <!-- Recent Score + Leadboard Table Section -->
-    <section class="recent-scores-wrapper">
-      <!-- Recent score text and refresh button -->
-      <div class="recent-score-box">
-        <h3>Recent scores</h3>
-        <button id="refresh">Refresh</button>
-      </div>
-      <!-- Leadboard table -->
-      <div class="scores-table">
-        <ul class="nav" id="add-player-info">
-          <li class="nav-item">Name: 100</li>
-          <li class="nav-item">Name: 20</li>
-          <li class="nav-item">Name: 50</li>
-          <li class="nav-item">Name: 78</li>
-          <li class="nav-item">Name: 125</li>
-          <li class="nav-item">Name: 77</li>
-          <li class="nav-item">Name: 42</li>
-        </ul>
-      </div>
-    </section>
-    <!-- Adding new player and score Section-->
-    <section class="add-your-score-wrapper">
-      <h3>Add your score</h3>
-      <form action="" method="get" id="form-add-player-score">
-        <input type="text" id="name" placeholder="Your name" required>
-        <input type="text" id="score" placeholder="Your score" required>
-        <input type="submit" value="Submit" class="btn-submit">
-      </form>
-    </section>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haider Webpack</title>
+  </head>
+  <body>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <!-- Main container -->
+    <main>
+      <!-- Recent Score + Leadboard Table Section -->
+      <section class="recent-scores-wrapper">
+        <!-- Recent score text and refresh button -->
+        <div class="recent-score-box">
+          <h3>Recent scores</h3>
+          <button id="refresh">Refresh</button>
+        </div>
+        <!-- Leadboard table -->
+        <div class="scores-table">
+          <ul class="nav" id="add-player-info">
+            <!-- Adding Dynamically Players Info -->
+          </ul>
+          <!-- Show Success/failer message -->
+          <p id="show-message"></p>
+        </div>
+      </section>
+      <!-- Adding new player and score Section-->
+      <section class="add-your-score-wrapper">
+        <h3>Add your score</h3>
+        <form action="" method="get" id="form-add-player-score">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="number" id="score" placeholder="Your score" min="1" required />
+          <input type="submit" value="Submit" class="btn-submit" />
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
