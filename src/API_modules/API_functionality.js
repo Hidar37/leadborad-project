@@ -1,11 +1,10 @@
-import { key } from './API_key.js';
+import key from './API_key.js';
 
 export default class API {
   constructor() {
     this.apiName = 'Haider Ahmad';
   }
 
-  // eslint-disable-next-line class-methods-use-this
   addScores = async (playerName, playerSocre) => {
     const response = await fetch(
       `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/`,
@@ -24,7 +23,6 @@ export default class API {
     return responseJson;
   };
 
-  // eslint-disable-next-line class-methods-use-this
   getScores = async () => {
     const response = await fetch(
       'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/k1XrGGwLaFG2Z0M5dLBC/scores/',
