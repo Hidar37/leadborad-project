@@ -8,6 +8,7 @@
 /* Header Section */
 header {
   margin: 2rem 1rem 3rem;
+  border-bottom: 1px solid black;
 }
 
 header h1 {
@@ -34,13 +35,28 @@ main {
 
 .recent-score-box h3 {
   font-size: 2rem;
+  border-bottom: 1px solid black;
 }
 
 .recent-score-box button {
   width: 100px;
   font-size: 1rem;
   font-weight: bolder;
-  border: 2px solid black;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #198754;
+  color: #fff;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.recent-score-box button:active {
+  scale: 0.98;
+}
+
+.recent-score-box button:hover {
+  background-color: #184e35;
+  cursor: pointer;
 }
 
 /* Leadboard Table section */
@@ -81,6 +97,23 @@ main {
   font-size: 1.2rem;
   border: 2px solid black;
   cursor: pointer;
+}
+
+.add-your-score-wrapper form input[type="submit"] {
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background-color: #198754;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.add-your-score-wrapper form input[type="submit"]:hover {
+  background-color: #184e35;
+}
+
+.add-your-score-wrapper form input[type="submit"]:active {
+  scale: 0.98;
 }
 
 /* Success/Falier Message */
